@@ -63,12 +63,12 @@ Open `Signal Recorder.lvproj` in LabVIEW. The project already references all the
 | Control | Purpose |
 |---|---|
 | `Path` | Destination of the WAVE file being recorded |
-| `sound format` (cluster) | Bits per sample, number of channels, sample rate (S/s), number of samples/channel |
-| `Play` / `Stop` (boolean, mapped to `Action` enum) | Starts or stops acquisition and file writing |
-| `Off/On` (checkbox) | Auxiliary toggle on the acquisition/analysis path |
+| `Sound format` (cluster) | Bits per sample, number of channels, sample rate (S/s), number of samples/channel |
+| `Number of samples/ch` | Specifies the number of samples acquired from each channel during every read operation. This value determines the processing block size used for recording and analysis. |
+| `Play` (boolean, mapped to `Action` enum) | Starts acquisition and file writing |
 | `Tab Control` → `Waveform Analyzer` | Shows the live time-domain **Waveform Graph** |
 | `Tab Control` → `Spectrum Analyzer` | Shows the live **Spectrum Graph** (FFT magnitude), with `XScale Maximum` to set the frequency axis range |
-| Error cluster (`status`, `code`, `source`) | Standard NI error reporting, displayed via `Simple Error Handler.vi` |
+| `Zoom` | Vertical slider used to adjust the graph zoom level for easier inspection of waveform and spectrum data. |
 
 ## Signal flow and states
 

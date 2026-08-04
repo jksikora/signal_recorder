@@ -2,6 +2,8 @@
 
 A **LabVIEW** application for recording an audio signal from the sound card, saving it to a WAVE file, and analyzing it live in two views: a time-domain waveform and an FFT magnitude spectrum. The whole program is built as a single top-level VI (`Program.vi`) backed by a shared global-data VI (`GVar.vi`) and a handful of custom typedef controls.
 
+<img width="1916" height="1013" alt="sigrec00" src="https://github.com/user-attachments/assets/6cccf6d7-4e2a-4724-97ce-662e1caeadfb" />
+
 ## Table of contents
 
 - [How it works](#how-it-works)
